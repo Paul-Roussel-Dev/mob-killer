@@ -6,26 +6,45 @@ using Mob_Killer.Entities;
 
 namespace Mob_Killer
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             using (var dboContext = new MobKillerDbContext())
             {
-                var joueur = dboContext.Joueurs.FirstOrDefault();
+                var Joueur = dboContext.Joueurs.Find(1);
+                Console.WriteLine($"{Joueur?.NameJoueur} | {Joueur?.HealthJoueur}");
+                
+                var Item = dboContext.Items.Find(1);
+                Console.WriteLine($"{Item?.NameItem} | {Item?.BaseAttack}");
+                
+                Item = dboContext.Items.Find(3);
+                Console.WriteLine($"{Item?.NameItem} | {Item?.BaseAttack}");
+                
+                Item = dboContext.Items.Find(2);
+                Console.WriteLine($"{Item?.NameItem} | {Item?.BaseAttack}");
 
-                Console.WriteLine($"{joueur?.IdJoueur} | {joueur?.NameJoueur}");
 
-                var item = new Item() { NameItem = "Excalibur" };
-                var newJoueur = new Joueur()
-                {
-                    NameJoueur = "Roger",
-                    HealthJoueur = 100.00,
-                    EvasionJoueur = 15.00
-                };
+                //var newItem = new Item() { 
+                //    IdItem = 2,
+                //    NameItem = "Excalibur",
+                //    BaseAttack = 5.00,
+                //    BonusEvasion = 5.00
+                //};
 
-                dboContext.Joueurs.Add(newJoueur);
-                dboContext.SaveChanges();
+                //var newJoueur = new Joueur()
+                //{
+                //    IdJoueur = 2,
+                //    NameJoueur = "Roger",
+                //    HealthJoueur = 100.00,
+                //    EvasionJoueur = 15.00,
+                //    ItemId = 2
+                //};
+
+                //dboContext.Items.Add(newItem);
+                //dboContext.Joueurs.Add(newJoueur);
+                //dboContext.SaveChanges();
+
             }
 
             Console.ReadLine();

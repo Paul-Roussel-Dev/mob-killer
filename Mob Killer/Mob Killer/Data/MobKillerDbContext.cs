@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Mob_Killer.Entities;
 
 namespace Mob_Killer.Data
-{
+{   
     public class MobKillerDbContext : DbContext
     {
         public DbSet<Joueur> Joueurs { get; set; }
@@ -23,12 +23,14 @@ namespace Mob_Killer.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Joueur>().ToTable("Joueur");
+
             modelBuilder.Entity<Item>().ToTable("Item");
 
             modelBuilder.Entity<Monstre>().ToTable("Monstre");
 
             modelBuilder.Entity<Joueur>()
-                .HasKey(s => new { s.ItemId });
+                .HasKey(s => new { s.IdJoueur });
 
             modelBuilder.Entity<Item>(s =>
             {
@@ -37,6 +39,10 @@ namespace Mob_Killer.Data
                 s.Property(p => p.BaseAttack).IsRequired();
                 s.Property(p => p.BonusEvasion).IsRequired();
             });
+
+            modelBuilder.Entity<Monstre>()
+                .HasKey(s => new { s.IdMonstre });
+
 
             //modelBuilder.Entity<Quote>(q =>
             //{

@@ -7,7 +7,20 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Migrations\" />
+    <Compile Remove="Migrations\20191118105039_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191118105039_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191118105058_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191118105058_InitialCreate.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="mobKiller.db" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="mobKiller.db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
