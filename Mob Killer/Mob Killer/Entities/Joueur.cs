@@ -4,9 +4,9 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
-namespace MobKiller.Entities
+namespace Mob_Killer.Entities
 {
-    public class Joueur
+    class Joueur
     {
         public int IdJoueur { get; set; }
 
