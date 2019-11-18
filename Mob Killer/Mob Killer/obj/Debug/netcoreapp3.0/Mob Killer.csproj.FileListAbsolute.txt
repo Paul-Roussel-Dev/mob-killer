@@ -37,3 +37,6 @@ D:\Visual Studio\Mob Killer\Mob Killer\bin\Debug\netcoreapp3.0\runtimes\win-arm6
 D:\Visual Studio\Mob Killer\Mob Killer\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\e_sqlite3.dll
 D:\Visual Studio\Mob Killer\Mob Killer\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\e_sqlite3.dll
 D:\Visual Studio\Mob Killer\Mob Killer\obj\Debug\netcoreapp3.0\Mob Killer.csproj.CopyComplete
+C:\Users\paulr\OneDrive\Documents\GitHub\mob-killer\Mob Killer\Mob Killer\obj\Debug\netcoreapp3.0\Mob Killer.csprojAssemblyReference.cache
+C:\Users\paulr\OneDrive\Documents\GitHub\mob-killer\Mob Killer\Mob Killer\obj\Debug\netcoreapp3.0\Mob Killer.AssemblyInfoInputs.cache
+C:\Users\paulr\OneDrive\Documents\GitHub\mob-killer\Mob Killer\Mob Killer\obj\Debug\netcoreapp3.0\Mob Killer.AssemblyInfo.cs

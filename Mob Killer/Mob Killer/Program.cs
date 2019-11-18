@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using MobKiller.Data;
-using MobKiller.Entities;
+using Mob_Killer.Data;
+using Mob_Killer.Entities;
 
-namespace MobKiller
+namespace Mob_Killer
 {
     class Program
     {

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Visual Studio\\Mob Killer\\Mob Killer\\Mob Killer.csproj": {}
+    "C:\\Users\\paulr\\OneDrive\\Documents\\GitHub\\mob-killer\\Mob Killer\\Mob Killer\\Mob Killer.csproj": {}
   },
   "projects": {
-    "D:\\Visual Studio\\Mob Killer\\Mob Killer\\Mob Killer.csproj": {
+    "C:\\Users\\paulr\\OneDrive\\Documents\\GitHub\\mob-killer\\Mob Killer\\Mob Killer\\Mob Killer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Visual Studio\\Mob Killer\\Mob Killer\\Mob Killer.csproj",
+        "projectUniqueName": "C:\\Users\\paulr\\OneDrive\\Documents\\GitHub\\mob-killer\\Mob Killer\\Mob Killer\\Mob Killer.csproj",
         "projectName": "Mob Killer",
-        "projectPath": "D:\\Visual Studio\\Mob Killer\\Mob Killer\\Mob Killer.csproj",
+        "projectPath": "C:\\Users\\paulr\\OneDrive\\Documents\\GitHub\\mob-killer\\Mob Killer\\Mob Killer\\Mob Killer.csproj",
         "packagesPath": "C:\\Users\\paulr\\.nuget\\packages\\",
-        "outputPath": "D:\\Visual Studio\\Mob Killer\\Mob Killer\\obj\\",
+        "outputPath": "C:\\Users\\paulr\\OneDrive\\Documents\\GitHub\\mob-killer\\Mob Killer\\Mob Killer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\paulr\\AppData\\Roaming\\NuGet\\NuGet.Config",
