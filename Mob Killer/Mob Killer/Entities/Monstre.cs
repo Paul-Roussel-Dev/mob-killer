@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Mob_Killer.Entities
+namespace MobKiller.Entities
 {
-    class Monstre
+    public class Monstre
     {
         public int IdMonstre { get; set; }
 
