@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Mob_Killer.Entities;
+using MobKiller.Entities;
 
-namespace Mob_Killer.Data
+namespace MobKiller.Data
 {
     public class MobKillerDbContext : DbContext
     {
