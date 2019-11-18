@@ -36,3 +36,4 @@ Mob Killer/Mob Killer/obj/MobKiller.csproj.nuget.g.targets
 Mob Killer/Mob Killer/obj/project.assets.json
 Mob Killer/MobKiller.sln
 *.json
+Mob Killer/.vs/Mob_Killer/v16/Server/sqlite3/db.lock
