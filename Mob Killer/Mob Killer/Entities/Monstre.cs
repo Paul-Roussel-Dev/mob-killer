@@ -16,8 +16,18 @@ namespace Mob_Killer.Entities
 
         public double AttackMonstre { get; set; }
 
-        //public int DiceId { get; set; }
+        public Monstre(Monstre monstre)
+        {
+            monstre.IdMonstre = this.IdMonstre;
+            monstre.NameMonstre = this.NameMonstre;
+            monstre.HealthMonste = this.HealthMonste;
+            monstre.EvasionMonstre = this.EvasionMonstre;
+            monstre.AttackMonstre = this.AttackMonstre;
+        }
 
-        //public Dice Dice { get; set; }
+        public Monstre()
+        {
+
+        }
     }
 }

@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Mob_Killer.Controllers
+namespace Mob_Killer.Entities
 {
-    class Combat
+    public class Stage
     {
     }
 }

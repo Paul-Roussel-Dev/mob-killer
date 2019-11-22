@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Mob_Killer.Entities;
 
 namespace Mob_Killer.Data
-{   
+{
     public class MobKillerDbContext : DbContext
     {
         public DbSet<Joueur> Joueurs { get; set; }
@@ -14,6 +14,8 @@ namespace Mob_Killer.Data
         public DbSet<Monstre> Monstres { get; set; }
 
         public DbSet<Item> Items { get; set; }
+
+        public DbSet<Dialogue> Dialogues { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -29,6 +31,8 @@ namespace Mob_Killer.Data
 
             modelBuilder.Entity<Monstre>().ToTable("Monstre");
 
+            modelBuilder.Entity<Dialogue>().ToTable("Dialogue");
+
             modelBuilder.Entity<Joueur>()
                 .HasKey(s => new { s.IdJoueur });
 
@@ -43,6 +47,12 @@ namespace Mob_Killer.Data
             modelBuilder.Entity<Monstre>()
                 .HasKey(s => new { s.IdMonstre });
 
+            modelBuilder.Entity<Dialogue>(s =>
+            {
+                s.HasKey(p => p.IdDialogue);
+                s.Property(p => p.TypeDialogue).IsRequired();
+                s.Property(p => p.TextDialogue).IsRequired();
+            });
 
             //modelBuilder.Entity<Quote>(q =>
             //{

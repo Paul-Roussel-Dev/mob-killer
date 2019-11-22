@@ -20,5 +20,18 @@ namespace Mob_Killer.Entities
 
         public Item Item { get; set; }
 
+        public Joueur(Joueur joueur)
+        {
+            joueur.IdJoueur = this.IdJoueur;
+            joueur.NameJoueur = this.NameJoueur;
+            joueur.HealthJoueur = this.HealthJoueur;
+            joueur.EvasionJoueur = this.EvasionJoueur;
+            joueur.IdJoueur = this.IdJoueur;
+            joueur.Item = this.Item;
+        }
+        public Joueur()
+        {
+
+        }
     }
 }

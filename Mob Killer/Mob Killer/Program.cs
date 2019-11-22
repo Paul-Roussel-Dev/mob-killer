@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using Mob_Killer.Data;
 using Mob_Killer.Entities;
-using Mob_Killer.Controllers;
 
 namespace Mob_Killer
 {

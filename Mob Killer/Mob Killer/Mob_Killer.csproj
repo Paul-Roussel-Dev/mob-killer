@@ -14,6 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="Entities\Battle.cs~RF113d586.TMP" />
     <None Remove="mobKiller.db" />
   </ItemGroup>
 
