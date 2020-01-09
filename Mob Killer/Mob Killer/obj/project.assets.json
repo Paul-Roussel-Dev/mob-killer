@@ -1122,19 +1122,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\cedri\\.nuget\\packages\\": {}
+    "C:\\Users\\Amiral\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Cours MDS\\Projet MobKiller\\mob-killer\\Mob Killer\\Mob Killer\\Mob_Killer.csproj",
+      "projectUniqueName": "C:\\Users\\Amiral\\Desktop\\Projet\\mob-killer\\Mob Killer\\Mob Killer\\Mob_Killer.csproj",
       "projectName": "Mob_Killer",
-      "projectPath": "D:\\Cours MDS\\Projet MobKiller\\mob-killer\\Mob Killer\\Mob Killer\\Mob_Killer.csproj",
-      "packagesPath": "C:\\Users\\cedri\\.nuget\\packages\\",
-      "outputPath": "D:\\Cours MDS\\Projet MobKiller\\mob-killer\\Mob Killer\\Mob Killer\\obj\\",
+      "projectPath": "C:\\Users\\Amiral\\Desktop\\Projet\\mob-killer\\Mob Killer\\Mob Killer\\Mob_Killer.csproj",
+      "packagesPath": "C:\\Users\\Amiral\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Amiral\\Desktop\\Projet\\mob-killer\\Mob Killer\\Mob Killer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\cedri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Amiral\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
