@@ -1,0 +1,11 @@
+C:\Users\Geoffrey\source\repos\LootPhase\LootPhase\bin\Debug\netcoreapp3.0\LootPhase.exe
+C:\Users\Geoffrey\source\repos\LootPhase\LootPhase\bin\Debug\netcoreapp3.0\LootPhase.deps.json
+C:\Users\Geoffrey\source\repos\LootPhase\LootPhase\bin\Debug\netcoreapp3.0\LootPhase.runtimeconfig.json
+C:\Users\Geoffrey\source\repos\LootPhase\LootPhase\bin\Debug\netcoreapp3.0\LootPhase.runtimeconfig.dev.json
+C:\Users\Geoffrey\source\repos\LootPhase\LootPhase\bin\Debug\netcoreapp3.0\LootPhase.dll
+C:\Users\Geoffrey\source\repos\LootPhase\LootPhase\bin\Debug\netcoreapp3.0\LootPhase.pdb
+C:\Users\Geoffrey\source\repos\LootPhase\LootPhase\obj\Debug\netcoreapp3.0\LootPhase.csprojAssemblyReference.cache
+C:\Users\Geoffrey\source\repos\LootPhase\LootPhase\obj\Debug\netcoreapp3.0\LootPhase.AssemblyInfoInputs.cache
+C:\Users\Geoffrey\source\repos\LootPhase\LootPhase\obj\Debug\netcoreapp3.0\LootPhase.AssemblyInfo.cs
+C:\Users\Geoffrey\source\repos\LootPhase\LootPhase\obj\Debug\netcoreapp3.0\LootPhase.dll
+C:\Users\Geoffrey\source\repos\LootPhase\LootPhase\obj\Debug\netcoreapp3.0\LootPhase.pdb
