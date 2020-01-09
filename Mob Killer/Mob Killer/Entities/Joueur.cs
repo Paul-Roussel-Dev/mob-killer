@@ -6,30 +6,30 @@ using System.Text;
 
 namespace Mob_Killer.Entities
 {
-    public class Joueur
+    public class Player
     {
-        public int IdJoueur { get; set; }
+        public int Id { get; set; }
 
-        public string NameJoueur { get; set; }
+        public string Name { get; set; }
 
-        public double HealthJoueur { get; set; }
+        public double Health { get; set; }
 
-        public double EvasionJoueur { get; set; }
+        public double Evasion { get; set; }
 
         public int ItemId { get; set; }
 
         public Item Item { get; set; }
 
-        public Joueur(Joueur joueur)
+        public Player(Player player)
         {
-            joueur.IdJoueur = this.IdJoueur;
-            joueur.NameJoueur = this.NameJoueur;
-            joueur.HealthJoueur = this.HealthJoueur;
-            joueur.EvasionJoueur = this.EvasionJoueur;
-            joueur.IdJoueur = this.IdJoueur;
-            joueur.Item = this.Item;
+            player.Id = this.Id;
+            player.Name = this.Name;
+            player.Health = this.Health;
+            player.Evasion = this.Evasion;
+            player.Id = this.Id;
+            player.Item = this.Item;
         }
-        public Joueur()
+        public Player()
         {
 
         }

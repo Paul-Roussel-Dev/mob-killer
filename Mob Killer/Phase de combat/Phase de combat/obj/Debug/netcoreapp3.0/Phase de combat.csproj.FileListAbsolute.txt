@@ -1,0 +1,11 @@
+C:\Users\Amiral\source\repos\Phase de combat\Phase de combat\bin\Debug\netcoreapp3.0\Phase de combat.exe
+C:\Users\Amiral\source\repos\Phase de combat\Phase de combat\bin\Debug\netcoreapp3.0\Phase de combat.deps.json
+C:\Users\Amiral\source\repos\Phase de combat\Phase de combat\bin\Debug\netcoreapp3.0\Phase de combat.runtimeconfig.json
+C:\Users\Amiral\source\repos\Phase de combat\Phase de combat\bin\Debug\netcoreapp3.0\Phase de combat.runtimeconfig.dev.json
+C:\Users\Amiral\source\repos\Phase de combat\Phase de combat\bin\Debug\netcoreapp3.0\Phase de combat.dll
+C:\Users\Amiral\source\repos\Phase de combat\Phase de combat\bin\Debug\netcoreapp3.0\Phase de combat.pdb
+C:\Users\Amiral\source\repos\Phase de combat\Phase de combat\obj\Debug\netcoreapp3.0\Phase de combat.csprojAssemblyReference.cache
+C:\Users\Amiral\source\repos\Phase de combat\Phase de combat\obj\Debug\netcoreapp3.0\Phase de combat.AssemblyInfoInputs.cache
+C:\Users\Amiral\source\repos\Phase de combat\Phase de combat\obj\Debug\netcoreapp3.0\Phase de combat.AssemblyInfo.cs
+C:\Users\Amiral\source\repos\Phase de combat\Phase de combat\obj\Debug\netcoreapp3.0\Phase de combat.dll
+C:\Users\Amiral\source\repos\Phase de combat\Phase de combat\obj\Debug\netcoreapp3.0\Phase de combat.pdb
