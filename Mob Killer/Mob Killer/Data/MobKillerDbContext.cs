@@ -9,9 +9,9 @@ namespace Mob_Killer.Data
 {
     public class MobKillerDbContext : DbContext
     {
-        public DbSet<Joueur> Joueurs { get; set; }
+        public DbSet<Player> Players { get; set; }
 
-        public DbSet<Monstre> Monstres { get; set; }
+        public DbSet<Monster> Monsters { get; set; }
 
         public DbSet<Item> Items { get; set; }
 
@@ -25,27 +25,27 @@ namespace Mob_Killer.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Joueur>().ToTable("Joueur");
+            modelBuilder.Entity<Player>().ToTable("Player");
 
             modelBuilder.Entity<Item>().ToTable("Item");
 
-            modelBuilder.Entity<Monstre>().ToTable("Monstre");
+            modelBuilder.Entity<Monster>().ToTable("Monster");
 
             modelBuilder.Entity<Dialogue>().ToTable("Dialogue");
 
-            modelBuilder.Entity<Joueur>()
-                .HasKey(s => new { s.IdJoueur });
+            modelBuilder.Entity<Player>()
+                .HasKey(s => new { s.Id });
 
             modelBuilder.Entity<Item>(s =>
             {
-                s.HasKey(p => p.IdItem);
-                s.Property(p => p.NameItem).IsRequired();
+                s.HasKey(p => p.Id);
+                s.Property(p => p.Name).IsRequired();
                 s.Property(p => p.BaseAttack).IsRequired();
                 s.Property(p => p.BonusEvasion).IsRequired();
             });
 
-            modelBuilder.Entity<Monstre>()
-                .HasKey(s => new { s.IdMonstre });
+            modelBuilder.Entity<Monster>()
+                .HasKey(s => new { s.Id });
 
             modelBuilder.Entity<Dialogue>(s =>
             {

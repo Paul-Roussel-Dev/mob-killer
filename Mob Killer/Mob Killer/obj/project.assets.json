@@ -1122,16 +1122,11 @@
     ]
   },
   "packageFolders": {
-<<<<<<< HEAD
     "C:\\Users\\cedri\\.nuget\\packages\\": {}
-=======
-    "C:\\Users\\Geoffrey\\.nuget\\packages\\": {}
->>>>>>> master
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "D:\\Cours MDS\\Git Project\\mob-killer\\Mob Killer\\Mob Killer\\Mob_Killer.csproj",
       "projectName": "Mob_Killer",
       "projectPath": "D:\\Cours MDS\\Git Project\\mob-killer\\Mob Killer\\Mob Killer\\Mob_Killer.csproj",
@@ -1140,16 +1135,6 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\cedri\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-      "projectUniqueName": "C:\\laragon\\www\\MDS\\mob-killer\\Mob Killer\\Mob Killer\\Mob_Killer.csproj",
-      "projectName": "Mob_Killer",
-      "projectPath": "C:\\laragon\\www\\MDS\\mob-killer\\Mob Killer\\Mob Killer\\Mob_Killer.csproj",
-      "packagesPath": "C:\\Users\\Geoffrey\\.nuget\\packages\\",
-      "outputPath": "C:\\laragon\\www\\MDS\\mob-killer\\Mob Killer\\Mob Killer\\obj\\",
-      "projectStyle": "PackageReference",
-      "configFilePaths": [
-        "C:\\Users\\Geoffrey\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> master
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1202,5 +1187,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problème de lecture du fichier cache D:\\Cours MDS\\Git Project\\mob-killer\\Mob Killer\\Mob Killer\\obj\\Mob_Killer.csproj.nuget.cache : Unexpected character encountered while parsing value: <. Path '', line 0, position 0."
+    }
+  ]
 }
