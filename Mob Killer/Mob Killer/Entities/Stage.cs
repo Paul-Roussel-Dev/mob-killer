@@ -6,5 +6,6 @@ namespace Mob_Killer.Entities
 {
     public class Stage
     {
+
     }
 }

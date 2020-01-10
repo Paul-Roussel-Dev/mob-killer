@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace LootPhase
+namespace Mob_Killer.LootPhase
 {
     class Program
     {

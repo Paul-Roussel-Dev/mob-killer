@@ -1,21 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Mob_Killer.Entities
+﻿namespace Mob_Killer.Entities
 {
     public class Item
     {
-        public int IdItem { get; set; }
-
-        public string NameItem { get; set; }
-
+        public int Id { get; set; }
+        public string Name { get; set; }
         public double BaseAttack { get; set; }
-
         public double BonusEvasion { get; set; }
 
-        //public int DiceId { get; set; }
+        public Item()
+        {
+            
+        }
 
-        //public Dice Dice { get; set; }
+        public Item(int id, string name,double baseAttack, double bonusEvasion)
+        {
+            this.Id = id;
+            this.Name = name;
+            this.BaseAttack = baseAttack;
+            this.BonusEvasion = bonusEvasion;
+        }
     }
 }

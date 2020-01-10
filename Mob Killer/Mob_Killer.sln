@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.29326.143
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mob_Killer", "Mob Killer\Mob_Killer.csproj", "{3B4997A7-9CFF-4DDF-BEC7-DBC654E81796}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mob_Killer.LootPhase", "LootPhase\LootPhase\Mob_Killer.LootPhase.csproj", "{12193196-FF09-4CEB-9C9A-E199701FB7B4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mob_Killer.Battle_Phase", "Phase de combat\Phase de combat\Mob_Killer.Battle_Phase.csproj", "{67F686B5-5FBF-4F83-9A40-13F69224249D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{3B4997A7-9CFF-4DDF-BEC7-DBC654E81796}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B4997A7-9CFF-4DDF-BEC7-DBC654E81796}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B4997A7-9CFF-4DDF-BEC7-DBC654E81796}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12193196-FF09-4CEB-9C9A-E199701FB7B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12193196-FF09-4CEB-9C9A-E199701FB7B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12193196-FF09-4CEB-9C9A-E199701FB7B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12193196-FF09-4CEB-9C9A-E199701FB7B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67F686B5-5FBF-4F83-9A40-13F69224249D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67F686B5-5FBF-4F83-9A40-13F69224249D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67F686B5-5FBF-4F83-9A40-13F69224249D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67F686B5-5FBF-4F83-9A40-13F69224249D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

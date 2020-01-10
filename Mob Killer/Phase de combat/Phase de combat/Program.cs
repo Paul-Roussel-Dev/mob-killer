@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Phase_de_combat
+namespace Mob_Killer.Battle_Phase
 {
     class Program
     {
