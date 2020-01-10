@@ -12,38 +12,44 @@ namespace Mob_Killer
         {
             using (var dboContext = new MobKillerDbContext())
             {
-                var Joueur = dboContext.Joueurs.Find(1);
-                Console.WriteLine($"{Joueur?.NameJoueur} | {Joueur?.HealthJoueur}");
+                //var Joueur = dboContext.Joueurs.Find(1);
+                //Console.WriteLine($"{Joueur?.NameJoueur} | {Joueur?.HealthJoueur}");
                 
-                var Item = dboContext.Items.Find(1);
-                Console.WriteLine($"{Item?.NameItem} | {Item?.BaseAttack}");
+                //var Item = dboContext.Items.Find(1);
+                //Console.WriteLine($"{Item?.NameItem} | {Item?.BaseAttack}");
                 
-                Item = dboContext.Items.Find(3);
-                Console.WriteLine($"{Item?.NameItem} | {Item?.BaseAttack}");
+                //Item = dboContext.Items.Find(3);
+                //Console.WriteLine($"{Item?.NameItem} | {Item?.BaseAttack}");
                 
-                Item = dboContext.Items.Find(2);
-                Console.WriteLine($"{Item?.NameItem} | {Item?.BaseAttack}");
+                //Item = dboContext.Items.Find(2);
+                //Console.WriteLine($"{Item?.NameItem} | {Item?.BaseAttack}");
 
+                //Lootphase
+                var classi = new MainClass();
+                List<string> Items = new List<string>() { "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" };
+                bool ValeurItem = false;
+                List<string> ListItem = new List<string>();
+                Random random = new Random(); // ne mettre dans le programme qu'une seule fois sinon risque de bug sur le ramdom
+                classi.lootPhase(Items, ValeurItem, random, ListItem);
+                ListItem.ForEach(Console.WriteLine);
+                Console.WriteLine(Environment.NewLine);
+                Items.ForEach(Console.WriteLine);
+                Console.WriteLine(Environment.NewLine);
 
-                //var newItem = new Item() { 
-                //    IdItem = 2,
-                //    NameItem = "Excalibur",
-                //    BaseAttack = 5.00,
-                //    BonusEvasion = 5.00
-                //};
+                classi.lootPhase(Items, ValeurItem, random, ListItem);
+                Console.WriteLine(Environment.NewLine);
+                ListItem.ForEach(Console.WriteLine);
+                Console.WriteLine(Environment.NewLine);
+                Items.ForEach(Console.WriteLine);
 
-                //var newJoueur = new Joueur()
-                //{
-                //    IdJoueur = 2,
-                //    NameJoueur = "Roger",
-                //    HealthJoueur = 100.00,
-                //    EvasionJoueur = 15.00,
-                //    ItemId = 2
-                //};
+                //BattlePhase
+                var item = new Item(1, "le Rougail Saucisse", 25, 5);
+                var player = new Player(1, "BotAlviss", 100, 1, item, 30);
+                var monster = new Monster("AnneSo La Beuglante", 150, 15, 15);
+                var battle = new Battle();
+                var win = battle.BattleResult(player, monster);
 
-                //dboContext.Items.Add(newItem);
-                //dboContext.Joueurs.Add(newJoueur);
-                //dboContext.SaveChanges();
+                Console.WriteLine(win ? "vous avez gagné !!" : "Vous avez perdu ... ");
 
             }
 

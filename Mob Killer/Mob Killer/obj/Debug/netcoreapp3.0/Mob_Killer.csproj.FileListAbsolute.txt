@@ -93,3 +93,8 @@ D:\Cours MDS\Projet MobKiller\mob-killer\Mob Killer\Mob Killer\obj\Debug\netcore
 D:\Cours MDS\Projet MobKiller\mob-killer\Mob Killer\Mob Killer\obj\Debug\netcoreapp3.0\Mob_Killer.csproj.CopyComplete
 D:\Cours MDS\Projet MobKiller\mob-killer\Mob Killer\Mob Killer\obj\Debug\netcoreapp3.0\Mob_Killer.dll
 D:\Cours MDS\Projet MobKiller\mob-killer\Mob Killer\Mob Killer\obj\Debug\netcoreapp3.0\Mob_Killer.pdb
+D:\Cours MDS\Git Project\mob-killer\Mob Killer\Mob Killer\obj\Debug\netcoreapp3.0\Mob_Killer.csprojAssemblyReference.cache
+D:\Cours MDS\Git Project\mob-killer\Mob Killer\Mob Killer\obj\Debug\netcoreapp3.0\Mob_Killer.AssemblyInfoInputs.cache
+D:\Cours MDS\Git Project\mob-killer\Mob Killer\Mob Killer\obj\Debug\netcoreapp3.0\Mob_Killer.AssemblyInfo.cs
+D:\Cours MDS\Git Project\mob-killer\Mob Killer\Mob Killer\obj\Debug\netcoreapp3.0\Mob_Killer.dll
+D:\Cours MDS\Git Project\mob-killer\Mob Killer\Mob Killer\obj\Debug\netcoreapp3.0\Mob_Killer.pdb

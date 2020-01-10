@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace LootPhase
+namespace Mob_Killer.LootPhase
 {
     public class MainClass
     {

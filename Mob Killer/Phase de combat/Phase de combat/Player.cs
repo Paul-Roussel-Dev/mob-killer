@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Phase_de_combat
+namespace Mob_Killer.Battle_Phase
 {
     public class Player
     {

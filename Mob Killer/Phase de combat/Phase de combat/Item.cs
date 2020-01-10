@@ -1,4 +1,4 @@
-﻿namespace Phase_de_combat
+﻿namespace Mob_Killer.Battle_Phase
 {
     public class Item
     {
