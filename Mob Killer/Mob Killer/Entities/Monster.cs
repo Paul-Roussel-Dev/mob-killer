@@ -6,6 +6,7 @@ namespace Mob_Killer.Entities
 {
     public class Monster
     {
+        public int Id { get; set; }
         public string Name { get; set; }
         public double Health { get; set; }
         public double Attack { get; set; }
