@@ -9,3 +9,14 @@ C:\Users\Geoffrey\source\repos\LootPhase\LootPhase\obj\Debug\netcoreapp3.0\LootP
 C:\Users\Geoffrey\source\repos\LootPhase\LootPhase\obj\Debug\netcoreapp3.0\LootPhase.AssemblyInfo.cs
 C:\Users\Geoffrey\source\repos\LootPhase\LootPhase\obj\Debug\netcoreapp3.0\LootPhase.dll
 C:\Users\Geoffrey\source\repos\LootPhase\LootPhase\obj\Debug\netcoreapp3.0\LootPhase.pdb
+C:\laragon\www\MDS\mob-killer\Mob Killer\LootPhase\LootPhase\bin\Debug\netcoreapp3.0\LootPhase.exe
+C:\laragon\www\MDS\mob-killer\Mob Killer\LootPhase\LootPhase\bin\Debug\netcoreapp3.0\LootPhase.deps.json
+C:\laragon\www\MDS\mob-killer\Mob Killer\LootPhase\LootPhase\bin\Debug\netcoreapp3.0\LootPhase.runtimeconfig.json
+C:\laragon\www\MDS\mob-killer\Mob Killer\LootPhase\LootPhase\bin\Debug\netcoreapp3.0\LootPhase.runtimeconfig.dev.json
+C:\laragon\www\MDS\mob-killer\Mob Killer\LootPhase\LootPhase\bin\Debug\netcoreapp3.0\LootPhase.dll
+C:\laragon\www\MDS\mob-killer\Mob Killer\LootPhase\LootPhase\bin\Debug\netcoreapp3.0\LootPhase.pdb
+C:\laragon\www\MDS\mob-killer\Mob Killer\LootPhase\LootPhase\obj\Debug\netcoreapp3.0\LootPhase.csprojAssemblyReference.cache
+C:\laragon\www\MDS\mob-killer\Mob Killer\LootPhase\LootPhase\obj\Debug\netcoreapp3.0\LootPhase.AssemblyInfoInputs.cache
+C:\laragon\www\MDS\mob-killer\Mob Killer\LootPhase\LootPhase\obj\Debug\netcoreapp3.0\LootPhase.AssemblyInfo.cs
+C:\laragon\www\MDS\mob-killer\Mob Killer\LootPhase\LootPhase\obj\Debug\netcoreapp3.0\LootPhase.dll
+C:\laragon\www\MDS\mob-killer\Mob Killer\LootPhase\LootPhase\obj\Debug\netcoreapp3.0\LootPhase.pdb
