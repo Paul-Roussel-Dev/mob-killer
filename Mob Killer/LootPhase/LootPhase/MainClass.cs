@@ -10,7 +10,7 @@ namespace Mob_Killer.LootPhase
         {
 
         }
-        public void lootPhase(List<string> Items, bool ValeurItem, Random random, List<string> ListItem)
+        public void lootPhase(List<string> Items, Random random, List<string> ListItem)
         {
             int RamdomItemA = random.Next(0, Items.Count);
             ListItem.Add(Items[RamdomItemA]);
@@ -21,7 +21,7 @@ namespace Mob_Killer.LootPhase
             Console.WriteLine("0 = " + Items[RamdomItemA]);
             
             int RamdomItemB = random.Next(0, Items.Count);
-            Console.WriteLine("votre itemb index " + RamdomItemB);
+            
 
             do
             {
@@ -39,10 +39,10 @@ namespace Mob_Killer.LootPhase
 
             Console.WriteLine("1 = " + Items[RamdomItemB]);
 
+            string item = Console.ReadLine();
+            
 
-            bool ItemChoisiA = bool.TryParse(Console.ReadLine(), out ValeurItem);
-
-            if (ItemChoisiA)
+            if (item == "1")
             {
                 Console.WriteLine("Vous avez choisi : " + Items[RamdomItemB]);
             }

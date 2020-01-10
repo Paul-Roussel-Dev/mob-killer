@@ -1122,11 +1122,16 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\cedri\\.nuget\\packages\\": {}
+=======
+    "C:\\Users\\Geoffrey\\.nuget\\packages\\": {}
+>>>>>>> master
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "D:\\Cours MDS\\Git Project\\mob-killer\\Mob Killer\\Mob Killer\\Mob_Killer.csproj",
       "projectName": "Mob_Killer",
       "projectPath": "D:\\Cours MDS\\Git Project\\mob-killer\\Mob Killer\\Mob Killer\\Mob_Killer.csproj",
@@ -1135,6 +1140,16 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\cedri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+      "projectUniqueName": "C:\\laragon\\www\\MDS\\mob-killer\\Mob Killer\\Mob Killer\\Mob_Killer.csproj",
+      "projectName": "Mob_Killer",
+      "projectPath": "C:\\laragon\\www\\MDS\\mob-killer\\Mob Killer\\Mob Killer\\Mob_Killer.csproj",
+      "packagesPath": "C:\\Users\\Geoffrey\\.nuget\\packages\\",
+      "outputPath": "C:\\laragon\\www\\MDS\\mob-killer\\Mob Killer\\Mob Killer\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Geoffrey\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> master
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
