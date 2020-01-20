@@ -37,9 +37,7 @@ namespace Mob_Killer.Entities
 
                     compteur++;
                 }
-
-                Console.WriteLine(choix);
-
+                
             }
 
         }

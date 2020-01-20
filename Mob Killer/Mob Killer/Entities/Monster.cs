@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Linq;
+using Mob_Killer.Data;
 
 namespace Mob_Killer.Entities
 {
@@ -15,6 +17,18 @@ namespace Mob_Killer.Entities
         public Monster()
         {
 
+        }
+
+        public List<Monster> getMonstres()
+        {
+
+            using (var dboContext = new MobKillerDbContext())
+            {
+                var Monstres = dboContext.Monsters;
+                var list = Monstres.ToList();
+
+                return list;
+            }
         }
 
         public Monster(string name, double health, double attack, double evasion)
