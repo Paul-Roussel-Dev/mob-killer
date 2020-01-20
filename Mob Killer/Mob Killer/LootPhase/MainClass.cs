@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Mob_Killer.Entities;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -10,7 +11,7 @@ namespace LootPhase
         {
 
         }
-        public void lootPhase(List<string> AvailableItems, bool valeurItem, Random random, List<string> ItemsAldreadyProposed)
+        public void lootPhase(List<Item> AvailableItems, bool valeurItem, Random random, List<Item> ItemsAldreadyProposed)
         {
             int RamdomItemA = random.Next(0, AvailableItems.Count);
             ItemsAldreadyProposed.Add(AvailableItems[RamdomItemA]);

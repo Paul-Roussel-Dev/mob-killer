@@ -27,9 +27,9 @@ namespace Mob_Killer
 
                 //Lootphase
                 var classi = new MainClass();
-                List<string> AvailableItems = new List<string>() { "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" };
+                List<Item> AvailableItems = new List<Item>();
                 bool ValeurItem = false;
-                List<string> ListItem = new List<string>();
+                List<Item> ListItem = new List<Item>();
                 Random random = new Random(); // ne mettre dans le programme qu'une seule fois sinon risque de bug sur le ramdom
                 classi.lootPhase(AvailableItems, ValeurItem, random, ListItem);
                 ListItem.ForEach(Console.WriteLine);
