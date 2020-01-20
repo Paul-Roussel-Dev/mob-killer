@@ -2,7 +2,7 @@
 {
     public class Item
     {
-        public int Id { get; set; }
+        public int IdItem { get; set; }
         public string Name { get; set; }
         public double BaseAttack { get; set; }
         public double BonusEvasion { get; set; }
