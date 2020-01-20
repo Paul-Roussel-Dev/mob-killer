@@ -15,7 +15,7 @@ namespace Mob_Killer.Data
 
         public DbSet<Item> Items { get; set; }
 
-        public DbSet<Dialogue> Dialogues { get; set; }
+        public DbSet<Dialogue> Dialogue { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -49,9 +49,9 @@ namespace Mob_Killer.Data
 
             modelBuilder.Entity<Dialogue>(s =>
             {
-                s.HasKey(p => p.IdDialogue);
-                s.Property(p => p.TypeDialogue).IsRequired();
-                s.Property(p => p.TextDialogue).IsRequired();
+                s.HasKey(p => p.Id);
+                s.Property(p => p.Type).IsRequired();
+                s.Property(p => p.Text).IsRequired();
             });
 
             //modelBuilder.Entity<Quote>(q =>

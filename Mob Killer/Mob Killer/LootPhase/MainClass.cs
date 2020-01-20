@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Mob_Killer
+namespace LootPhase
 {
     public class MainClass
     {
@@ -10,50 +10,50 @@ namespace Mob_Killer
         {
 
         }
-        public void lootPhase(List<string> Items, bool ValeurItem, Random random, List<string> ListItem)
+        public void lootPhase(List<string> AvailableItems, bool valeurItem, Random random, List<string> ItemsAldreadyProposed)
         {
-            int RamdomItemA = random.Next(0, Items.Count);
-            ListItem.Add(Items[RamdomItemA]);
+            int RamdomItemA = random.Next(0, AvailableItems.Count);
+            ItemsAldreadyProposed.Add(AvailableItems[RamdomItemA]);
 
 
             Console.WriteLine("Bravo Vous venez de remporter votre duel ! \n Choisissez à présent l'item de votre choix : \n");
 
-            Console.WriteLine("0 = " + Items[RamdomItemA]);
-            
-            int RamdomItemB = random.Next(0, Items.Count);
-            Console.WriteLine("votre itemb index " + RamdomItemB);
+            Console.WriteLine("0 = " + AvailableItems[RamdomItemA]);
+
+            int RamdomItemB = random.Next(0, AvailableItems.Count);
+
 
             do
             {
-                for (int j = 0; j < ListItem.Count; j++)
+                for (int j = 0; j < ItemsAldreadyProposed.Count; j++)
                 {
-                    if (ListItem[j] == Items[RamdomItemB])
+                    if (ItemsAldreadyProposed[j] == AvailableItems[RamdomItemB])
                     {
-                        RamdomItemB = random.Next(0, Items.Count);
+                        RamdomItemB = random.Next(0, AvailableItems.Count);
                     }
                 }
             } while (RamdomItemA == RamdomItemB);
 
-            ListItem.Add(Items[RamdomItemB]);
+            ItemsAldreadyProposed.Add(AvailableItems[RamdomItemB]);
 
 
-            Console.WriteLine("1 = " + Items[RamdomItemB]);
+            Console.WriteLine("1 = " + AvailableItems[RamdomItemB]);
+
+            string item = Console.ReadLine();
 
 
-            bool ItemChoisiA = bool.TryParse(Console.ReadLine(), out ValeurItem);
-
-            if (ItemChoisiA)
+            if (item == "1")
             {
-                Console.WriteLine("Vous avez choisi : " + Items[RamdomItemB]);
+                Console.WriteLine("Vous avez choisi : " + AvailableItems[RamdomItemB]);
             }
             else
             {
-                Console.WriteLine("Vous avez choisi : " + Items[RamdomItemA]);
+                Console.WriteLine("Vous avez choisi : " + AvailableItems[RamdomItemA]);
             }
 
 
-            Items.RemoveAt(RamdomItemA);
-            Items.RemoveAt(RamdomItemB>RamdomItemA ? RamdomItemB - 1 : RamdomItemB );
+            AvailableItems.RemoveAt(RamdomItemA);
+            AvailableItems.RemoveAt(RamdomItemB > RamdomItemA ? RamdomItemB - 1 : RamdomItemB);
 
         }
     }
