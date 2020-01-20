@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using LootPhase;
 using Mob_Killer.Data;
 using Mob_Killer.Entities;
 
@@ -26,21 +27,21 @@ namespace Mob_Killer
 
                 //Lootphase
                 var classi = new MainClass();
-                List<string> Items = new List<string>() { "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" };
+                List<string> AvailableItems = new List<string>() { "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" };
                 bool ValeurItem = false;
                 List<string> ListItem = new List<string>();
                 Random random = new Random(); // ne mettre dans le programme qu'une seule fois sinon risque de bug sur le ramdom
-                classi.lootPhase(Items, ValeurItem, random, ListItem);
+                classi.lootPhase(AvailableItems, ValeurItem, random, ListItem);
                 ListItem.ForEach(Console.WriteLine);
                 Console.WriteLine(Environment.NewLine);
-                Items.ForEach(Console.WriteLine);
+                AvailableItems.ForEach(Console.WriteLine);
                 Console.WriteLine(Environment.NewLine);
 
-                classi.lootPhase(Items, ValeurItem, random, ListItem);
+                classi.lootPhase(AvailableItems, ValeurItem, random, ListItem);
                 Console.WriteLine(Environment.NewLine);
                 ListItem.ForEach(Console.WriteLine);
                 Console.WriteLine(Environment.NewLine);
-                Items.ForEach(Console.WriteLine);
+                AvailableItems.ForEach(Console.WriteLine);
 
                 //BattlePhase
                 var item = new Item(1, "le Rougail Saucisse", 25, 5);

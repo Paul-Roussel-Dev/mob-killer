@@ -1122,19 +1122,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\cedri\\.nuget\\packages\\": {}
+    "C:\\Users\\geola\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Cours MDS\\Git Project\\mob-killer\\Mob Killer\\Mob Killer\\Mob_Killer.csproj",
+      "projectUniqueName": "C:\\Users\\geola\\Documents\\MDS\\mob-killer\\Mob Killer\\Mob Killer\\Mob_Killer.csproj",
       "projectName": "Mob_Killer",
-      "projectPath": "D:\\Cours MDS\\Git Project\\mob-killer\\Mob Killer\\Mob Killer\\Mob_Killer.csproj",
-      "packagesPath": "C:\\Users\\cedri\\.nuget\\packages\\",
-      "outputPath": "D:\\Cours MDS\\Git Project\\mob-killer\\Mob Killer\\Mob Killer\\obj\\",
+      "projectPath": "C:\\Users\\geola\\Documents\\MDS\\mob-killer\\Mob Killer\\Mob Killer\\Mob_Killer.csproj",
+      "packagesPath": "C:\\Users\\geola\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\geola\\Documents\\MDS\\mob-killer\\Mob Killer\\Mob Killer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\cedri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\geola\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1179,21 +1179,31 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[3.0.1, 3.0.1]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[3.0.2, 3.0.2]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[3.0.0, 3.0.0]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[3.0.0, 3.0.0]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problème de lecture du fichier cache D:\\Cours MDS\\Git Project\\mob-killer\\Mob Killer\\Mob Killer\\obj\\Mob_Killer.csproj.nuget.cache : Unexpected character encountered while parsing value: <. Path '', line 0, position 0."
-    }
-  ]
+  }
 }
