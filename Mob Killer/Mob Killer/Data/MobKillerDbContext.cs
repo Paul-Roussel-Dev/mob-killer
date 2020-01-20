@@ -38,7 +38,7 @@ namespace Mob_Killer.Data
 
             modelBuilder.Entity<Item>(s =>
             {
-                s.HasKey(p => p.Id);
+                s.HasKey(p => p.IdItem);
                 s.Property(p => p.Name).IsRequired();
                 s.Property(p => p.BaseAttack).IsRequired();
                 s.Property(p => p.BonusEvasion).IsRequired();
