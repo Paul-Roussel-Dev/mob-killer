@@ -13,6 +13,7 @@ namespace Mob_Killer
         {
             using (var dboContext = new MobKillerDbContext())
             {
+                Console.WriteLine(Utils.centaur);
                 //var Joueur = dboContext.Joueurs.Find(1);
                 //Console.WriteLine($"{Joueur?.NameJoueur} | {Joueur?.HealthJoueur}");
                 
@@ -46,7 +47,7 @@ namespace Mob_Killer
                 //BattlePhase
                 var item = new Item(1, "le Rougail Saucisse", 25, 5);
                 var player = new Player(1, "BotAlviss", 100, 1, item, 30);
-                var monster = new Monster("AnneSo La Beuglante", 150, 15, 15);
+                var monster = new Monster("AnneSo La Beuglante", 150, 15, 15, "-*-");
                 var battle = new Battle();
                 var win = battle.BattleResult(player, monster);
 

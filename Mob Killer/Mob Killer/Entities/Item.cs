@@ -14,7 +14,7 @@
 
         public Item(int id, string name,double baseAttack, double bonusEvasion)
         {
-            this.Id = id;
+            this.IdItem = id;
             this.Name = name;
             this.BaseAttack = baseAttack;
             this.BonusEvasion = bonusEvasion;

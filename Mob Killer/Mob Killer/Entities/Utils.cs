@@ -19,7 +19,7 @@ namespace Mob_Killer.Entities
                 Thread.Sleep(50);
             }
         }
-
+        /*
         public static void displayImage()
         {
             Image Picture = Image.FromFile(@"C:\Users\Amiral\Pictures\sumi_16x16.png");
@@ -43,7 +43,7 @@ namespace Mob_Killer.Entities
             }
 
         }
-
+        */
         public static string centaur = "  <=======]}======\n    --.   /|\n   _\"/_.'/\n .'._._,.'\n :/ \\{}/\n(L  /--',----._\n    |          \\\n   : /-\\ .'-'\\ / |\n    \\, ||    \\|\n     \\/ ||    ||\n";
     }
 }
