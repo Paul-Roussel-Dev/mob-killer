@@ -17,6 +17,8 @@ namespace Mob_Killer.Data
 
         public DbSet<Dialogue> Dialogue { get; set; }
 
+        public DbSet<Enigma> Question { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             //optionsBuilder.UseSqlServer(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=samurai;Integrated Security=True;");
@@ -32,6 +34,8 @@ namespace Mob_Killer.Data
             modelBuilder.Entity<Monster>().ToTable("Monster");
 
             modelBuilder.Entity<Dialogue>().ToTable("Dialogue");
+
+            modelBuilder.Entity<Enigma>().ToTable("Enigma");
 
             modelBuilder.Entity<Player>()
                 .HasKey(s => new { s.Id });
@@ -54,10 +58,15 @@ namespace Mob_Killer.Data
                 s.Property(p => p.Text).IsRequired();
             });
 
-            //modelBuilder.Entity<Quote>(q =>
-            //{
-            //    q.Property(p => p.Text).IsRequired();
-            //});
+            modelBuilder.Entity<Enigma>(s =>
+            {
+                s.HasKey(p => p.Id);
+                s.Property(p => p.Question).IsRequired();
+                s.Property(p => p.Answer).IsRequired();
+                s.Property(p => p.AnswerA).IsRequired();
+                s.Property(p => p.AnswerB).IsRequired();
+            });
+
         }
     }
 }
