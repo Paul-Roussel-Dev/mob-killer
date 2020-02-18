@@ -10,6 +10,8 @@ namespace LootPhase
     {
         public MainClass()
         {
+            var item = new Item();
+            var listItem = item.GetItems().ToList();
 
         }
         public List<string> lootPhase(List<string> availableItems, bool valeurItem, Random random)

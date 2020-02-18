@@ -11,6 +11,10 @@ namespace Mob_Killer.Entities
 
         }
 
+        public void StartGame()
+        {
+
+        }
 
     }
 }

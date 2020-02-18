@@ -1,4 +1,8 @@
-﻿namespace Mob_Killer.Entities
+﻿using Mob_Killer.Data;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace Mob_Killer.Entities
 {
     public class Item
     {
@@ -9,15 +13,27 @@
 
         public Item()
         {
-            
+
         }
 
-        public Item(int id, string name,double baseAttack, double bonusEvasion)
+        public Item(int id, string name, double baseAttack, double bonusEvasion)
         {
             this.IdItem = id;
             this.Name = name;
             this.BaseAttack = baseAttack;
             this.BonusEvasion = bonusEvasion;
         }
+
+        public List<Item> GetItems()
+        {
+            using (var dboContext = new MobKillerDbContext())
+            {
+                var Items = dboContext.Items;
+                var listItems = Items.ToList();
+                return listItems;
+            }
+        }
+
+
     }
 }
