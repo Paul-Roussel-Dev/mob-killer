@@ -19,7 +19,7 @@ namespace Mob_Killer.Entities
 
         }
 
-        public List<Monster> getMonstres()
+        public List<Monster> GetMonsters()
         {
 
             using (var dboContext = new MobKillerDbContext())
