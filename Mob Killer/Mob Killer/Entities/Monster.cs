@@ -13,6 +13,7 @@ namespace Mob_Killer.Entities
         public double Health { get; set; }
         public double Attack { get; set; }
         public double Evasion { get; set; }
+        public string Image { get; set; }
 
         public Monster()
         {
@@ -31,12 +32,13 @@ namespace Mob_Killer.Entities
             }
         }
 
-        public Monster(string name, double health, double attack, double evasion)
+        public Monster(string name, double health, double attack, double evasion, string image)
         {
             this.Name = name;
             this.Health = health;
             this.Attack = attack;
             this.Evasion = evasion;
+            this.Image = image;
         }
     }
 

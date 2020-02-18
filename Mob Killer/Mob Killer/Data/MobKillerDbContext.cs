@@ -37,35 +37,6 @@ namespace Mob_Killer.Data
 
             modelBuilder.Entity<Enigma>().ToTable("Enigma");
 
-            modelBuilder.Entity<Player>()
-                .HasKey(s => new { s.Id });
-
-            modelBuilder.Entity<Item>(s =>
-            {
-                s.HasKey(p => p.IdItem);
-                s.Property(p => p.Name).IsRequired();
-                s.Property(p => p.BaseAttack).IsRequired();
-                s.Property(p => p.BonusEvasion).IsRequired();
-            });
-
-            modelBuilder.Entity<Monster>()
-                .HasKey(s => new { s.Id });
-
-            modelBuilder.Entity<Dialogue>(s =>
-            {
-                s.HasKey(p => p.Id);
-                s.Property(p => p.Type).IsRequired();
-                s.Property(p => p.Text).IsRequired();
-            });
-
-            modelBuilder.Entity<Enigma>(s =>
-            {
-                s.HasKey(p => p.Id);
-                s.Property(p => p.Question).IsRequired();
-                s.Property(p => p.Answer).IsRequired();
-                s.Property(p => p.AnswerA).IsRequired();
-                s.Property(p => p.AnswerB).IsRequired();
-            });
 
         }
     }

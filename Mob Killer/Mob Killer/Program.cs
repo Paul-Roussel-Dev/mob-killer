@@ -13,6 +13,7 @@ namespace Mob_Killer
         {
             using (var dboContext = new MobKillerDbContext())
             {
+                Console.WriteLine(Utils.centaur);
                 //var Joueur = dboContext.Joueurs.Find(1);
                 //Console.WriteLine($"{Joueur?.NameJoueur} | {Joueur?.HealthJoueur}");
 
@@ -58,6 +59,7 @@ namespace Mob_Killer
                 //ListAvailableItemsId.ForEach(Console.WriteLine);
 
                 //BattlePhase
+<<<<<<< HEAD
                 var listMonster = new Monster().GetMonsters();
                 var randomMonster = Utils.random.Next(0, listMonster.Count);
                 var listItem = new Item().GetItems();
@@ -69,6 +71,13 @@ namespace Mob_Killer
                 //var win = battle.BattleResult(player, listMonster[randomMonster]);
 
                 //Console.WriteLine(win ? "vous avez gagné !!" : "Vous avez perdu ... ");
+=======
+                var item = new Item(1, "le Rougail Saucisse", 25, 5);
+                var player = new Player(1, "BotAlviss", 100, 1, item, 30);
+                var monster = new Monster("AnneSo La Beuglante", 150, 15, 15, "-*-");
+                var battle = new Battle();
+                var win = battle.BattleResult(player, monster);
+>>>>>>> master
 
                 var stage = new Stage();
                 stage.StartStage(player, listMonster[randomMonster],listItem[randomItem], dialogue);
