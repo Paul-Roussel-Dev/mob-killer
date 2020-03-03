@@ -19,7 +19,7 @@ namespace Mob_Killer.Entities
                 Thread.Sleep(50);
             }
         }
-<<<<<<< HEAD
+
 
         //public static void displayImage()
         //{
@@ -45,7 +45,7 @@ namespace Mob_Killer.Entities
 
         //}
 
-=======
+
         /*
         public static void displayImage()
         {
@@ -71,7 +71,6 @@ namespace Mob_Killer.Entities
 
         }
         */
->>>>>>> master
         public static string centaur = "  <=======]}======\n    --.   /|\n   _\"/_.'/\n .'._._,.'\n :/ \\{}/\n(L  /--',----._\n    |          \\\n   : /-\\ .'-'\\ / |\n    \\, ||    \\|\n     \\/ ||    ||\n";
     }
 }

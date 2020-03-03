@@ -40,6 +40,13 @@ namespace Mob_Killer.Entities
             this.Evasion = evasion;
             this.Image = image;
         }
+
+        public Monster MonsterChoosen(List<Monster> monsters, Random random)
+        {
+            var randomMonster = monsters[random.Next(0, monsters.Count)];
+            monsters = monsters.Where(i => i != randomMonster).ToList();
+            return randomMonster;
+        }
     }
 
 }
