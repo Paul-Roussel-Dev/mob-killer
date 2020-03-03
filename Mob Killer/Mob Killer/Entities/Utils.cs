@@ -11,7 +11,7 @@ namespace Mob_Killer.Entities
     {
         public static Random random = new Random();
 
-        public static void slowConsoleWriter(string text)
+        public static void SlowConsoleWriter(string text)
         {
             foreach (char c in text)
             {

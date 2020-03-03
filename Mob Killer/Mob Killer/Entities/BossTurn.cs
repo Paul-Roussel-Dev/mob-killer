@@ -14,7 +14,7 @@ namespace Mob_Killer.Entities
 
         public string GetAnswerFromQuestion(Enigma enigma)
         {
-            Utils.slowConsoleWriter(" Le Boss vous pose cette colle : " + enigma.Question);
+            Utils.SlowConsoleWriter(" Le Boss vous pose cette colle : " + enigma.Question);
             Console.WriteLine(" 0 : " + enigma.AnswerA + "  ||  1 : " + enigma.AnswerB);
 
             string Response = Console.ReadLine();
@@ -26,18 +26,16 @@ namespace Mob_Killer.Entities
         {
             // get boss questions 
 
-            double attackForce = 0;
-            double evasionForce = 0;
-            double attack = 0;
-            double evasion = 0;
+            double attackForce;
+            double evasionForce;
 
             attackForce = player.Item.BaseAttack;
             evasionForce = monster.Evasion;
 
-            var resultFromRollDice = Randoming.rollDices(attackForce, evasionForce);
+            var resultFromRollDice = Randoming.RollDices(attackForce, evasionForce);
             var param = new { attack = 0, evasion = 1 };
             Console.WriteLine(resultFromRollDice[param.attack] + " / " + resultFromRollDice[param.evasion]);
-            var damageDeal = (resultFromRollDice[param.attack] - (resultFromRollDice[param.attack] * (resultFromRollDice[param.evasion] == 0 ? (1 / 100) : (resultFromRollDice[param.evasion] / 100))));
+            double damageDeal;
 
 
             // begin interactive phase
@@ -60,18 +58,18 @@ namespace Mob_Killer.Entities
             if (Response == enigma.Answer)
             {
                 damageDeal = (resultFromRollDice[param.attack] - (resultFromRollDice[param.attack] * (resultFromRollDice[param.evasion] == 0 ? (1 / 100) : (resultFromRollDice[param.evasion] / 100)))) * 2;
-                Utils.slowConsoleWriter("Bonne réponse ! Vous attaquez avec un bonus ! ");
+                Utils.SlowConsoleWriter("Bonne réponse ! Vous attaquez avec un bonus ! ");
                 Console.WriteLine("Vous infligez " + damageDeal + " de dégat !");
                 monster.Health -= (damageDeal);
-                Utils.slowConsoleWriter("Il lui reste : " + monster.Health + "hp");
+                Utils.SlowConsoleWriter("Il lui reste : " + monster.Health + "hp");
             }
             else
             {
                 damageDeal = (resultFromRollDice[param.attack] - (resultFromRollDice[param.attack] * (resultFromRollDice[param.evasion] == 0 ? (1 / 100) : (resultFromRollDice[param.evasion] / 100)))) * 0.2;
-                Utils.slowConsoleWriter("Mauvaise réponse ! Vous attaquez avec un malus !");
+                Utils.SlowConsoleWriter("Mauvaise réponse ! Vous attaquez avec un malus !");
                 Console.WriteLine(" Vous infligez " + damageDeal + " de dégat !");
                 monster.Health -= (damageDeal);
-                Utils.slowConsoleWriter("Il lui reste : " + monster.Health + "hp");
+                Utils.SlowConsoleWriter("Il lui reste : " + monster.Health + "hp");
             }
         }
     }

@@ -12,16 +12,14 @@ namespace Mob_Killer.Entities
         }
         public void StartTurn(Player player, Monster monster, bool isTurn)
         {
-            double attackForce = 0;
-            double evasionForce = 0;
-            double attack = 0;
-            double evasion = 0;
+            double attackForce;
+            double evasionForce;
 
             if (isTurn)
             {
                 attackForce = player.Item.BaseAttack;
                 evasionForce = monster.Evasion;
-                var resultFromRollDice = Randoming.rollDices(attackForce, evasionForce);
+                var resultFromRollDice = Randoming.RollDices(attackForce, evasionForce);
                 var param = new { attack = 0, evasion = 1 };
                 Console.WriteLine(resultFromRollDice[param.attack] + " / " + resultFromRollDice[param.evasion]);
                 var damageDeal = (resultFromRollDice[param.attack] - (resultFromRollDice[param.attack] * (resultFromRollDice[param.evasion] == 0 ? (1 / 100) : (resultFromRollDice[param.evasion] / 100))));
@@ -34,7 +32,7 @@ namespace Mob_Killer.Entities
                 attackForce = monster.Attack;
                 evasionForce = player.Evasion + player.Item.BonusEvasion;
 
-                var resultFromRollDice = Randoming.rollDices(attackForce, evasionForce);
+                var resultFromRollDice = Randoming.RollDices(attackForce, evasionForce);
                 var param = new { attack = 0, evasion = 1 };
                 Console.WriteLine(resultFromRollDice[param.attack] + " / " + resultFromRollDice[param.evasion]);
                 var damageDeal = (resultFromRollDice[param.attack] - (resultFromRollDice[param.attack] * (resultFromRollDice[param.evasion] == 0 ? (1 / 100) : (resultFromRollDice[param.evasion] / 100))));

@@ -7,7 +7,7 @@ namespace Mob_Killer.Entities
     public static class Randoming
     {
 
-        public static double[] rollDices(double attackForce, double evasionForce)
+        public static double[] RollDices(double attackForce, double evasionForce)
         {
             var attackInted = Convert.ToInt32(attackForce * 100);
             var evasionInted = Convert.ToInt32(evasionForce * 100);

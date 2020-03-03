@@ -42,7 +42,7 @@ namespace Mob_Killer.Entities
                         turn.StartBossTurn(PlayerStats, MonsterStats, enigmas[TurnCounter]);
                         isPlayerTurn = !isPlayerTurn;
                         TurnCounter++;
-                        Utils.slowConsoleWriter(newPhase);
+                        Utils.SlowConsoleWriter(newPhase);
                     }
                     else
                     {
@@ -50,7 +50,7 @@ namespace Mob_Killer.Entities
                         Turn.StartTurn(PlayerStats, MonsterStats, isPlayerTurn);
                         isPlayerTurn = !isPlayerTurn;
                         Console.WriteLine(Utils.centaur);
-                        Utils.slowConsoleWriter(newPhase);
+                        Utils.SlowConsoleWriter(newPhase);
                     }
                 }
 
@@ -66,8 +66,6 @@ namespace Mob_Killer.Entities
                 Console.WriteLine("Combat Terminé !");
                 return false;
             }
-
-            return false;
         }
     }
 }

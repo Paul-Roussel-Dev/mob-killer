@@ -10,50 +10,45 @@ namespace Mob_Killer.Entities
     {
         public Lootphase()
         {
-            var item = new Item();
-            var listItem = item.GetItems().ToList();
-
         }
         public Item DroppedItems(List<Item> availableItems, Random random)
         {
-            using (var dboContext = new MobKillerDbContext())
+            using var dboContext = new MobKillerDbContext();
+            var randomItemA = availableItems[random.Next(0, availableItems.Count)];
+            Console.WriteLine(randomItemA.Name);
+            availableItems = availableItems.Where(i => i != randomItemA).ToList();
+            var randomItemB = availableItems[random.Next(0, availableItems.Count)];
+            Console.WriteLine(randomItemB.Name);
+            availableItems = availableItems.Where(i => i != randomItemB).ToList();
+
+            Console.WriteLine(" \n Choisissez à présent l'item de votre choix : \n");
+
+            Console.WriteLine("0 = " + randomItemA.Name + "\n" + "1 = " + randomItemB.Name);
+
+            var readeditem = Console.ReadLine();
+            Console.WriteLine("Vous avez choisi : " + readeditem);
+
+            if (readeditem != "0" && readeditem != "1")
             {
-                var randomItemA = availableItems[random.Next(0, availableItems.Count)];
-                Console.WriteLine(randomItemA.Name);
-                availableItems = availableItems.Where(i => i != randomItemA).ToList();
-                var randomItemB = availableItems[random.Next(0, availableItems.Count)];
-                Console.WriteLine(randomItemB.Name);
-                availableItems = availableItems.Where(i => i != randomItemB).ToList();
-
-                Console.WriteLine(" \n Choisissez à présent l'item de votre choix : \n");
-
-                Console.WriteLine("0 = " + randomItemA.Name + "\n" + "1 = " + randomItemB.Name);
-
-                var readeditem = Console.ReadLine();
-                Console.WriteLine("Vous avez choisi : " + readeditem);
-
-                if(readeditem != "0" && readeditem != "1")
+                do
                 {
-                    do
-                    {
-                        Console.WriteLine("Erreur de saisie veuillez écrire quelque chose de valide ! ");
-                        Console.WriteLine("0 = " + randomItemA.Name + "\n" + "1 = " + randomItemB.Name);
-                        readeditem = Console.ReadLine();
-                    }
-                    while (readeditem != "0" || readeditem != "1");
+                    Console.WriteLine("Erreur de saisie veuillez écrire quelque chose de valide ! ");
+                    Console.WriteLine("0 = " + randomItemA.Name + "\n" + "1 = " + randomItemB.Name);
+                    readeditem = Console.ReadLine();
                 }
-                if (readeditem == "0")
-                {
-                    return randomItemA;
-                }
-                else if (readeditem == "1")
-                {
-                    return randomItemB;
-                }
-                else
-                {
-                    return null;
-                }
+                while (readeditem != "0" || readeditem != "1");
+            }
+            if (readeditem == "0")
+            {
+                return randomItemA;
+            }
+            else if (readeditem == "1")
+            {
+                return randomItemB;
+            }
+            else
+            {
+                return null;
             }
         }
     }

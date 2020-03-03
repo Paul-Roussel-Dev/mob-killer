@@ -28,12 +28,10 @@ namespace Mob_Killer.Entities
 
         public List<Item> GetItems()
         {
-            using (var dboContext = new MobKillerDbContext())
-            {
-                var Items = dboContext.Items;
-                var listItems = Items.ToList();
-                return listItems;
-            }
+            using var dboContext = new MobKillerDbContext();
+            var Items = dboContext.Items;
+            var listItems = Items.ToList();
+            return listItems;
         }
 
 
