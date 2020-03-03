@@ -19,26 +19,28 @@ namespace Mob_Killer.Entities
             using (var dboContext = new MobKillerDbContext())
             {
                 var randomItemA = availableItems[random.Next(0, availableItems.Count)];
-                Console.WriteLine(randomItemA);
+                Console.WriteLine(randomItemA.Name);
                 availableItems = availableItems.Where(i => i != randomItemA).ToList();
-                Console.WriteLine(availableItems);
                 var randomItemB = availableItems[random.Next(0, availableItems.Count)];
-                Console.WriteLine(randomItemB);
+                Console.WriteLine(randomItemB.Name);
                 availableItems = availableItems.Where(i => i != randomItemB).ToList();
-                availableItems.ForEach(Console.WriteLine);
 
-                Console.WriteLine("Bravo Vous venez de remporter votre duel ! \n Choisissez à présent l'item de votre choix : \n");
+                Console.WriteLine(" \n Choisissez à présent l'item de votre choix : \n");
 
-                Console.WriteLine("0 = " + randomItemA + "\n" + "1 = " + randomItemB);
+                Console.WriteLine("0 = " + randomItemA.Name + "\n" + "1 = " + randomItemB.Name);
 
-                string readeditem = Console.ReadLine();
+                var readeditem = Console.ReadLine();
+                Console.WriteLine("Vous avez choisi : " + readeditem);
 
-               
-               while(readeditem!="0"||readeditem!="1")
+                if(readeditem != "0" && readeditem != "1")
                 {
-                    Console.WriteLine("Erreur de saisie veuillez écrire quelque chose de valide ! ");
-                    Console.WriteLine("0 = " + randomItemA + "\n" + "1 = " + randomItemB);
-                    readeditem = Console.ReadLine();
+                    do
+                    {
+                        Console.WriteLine("Erreur de saisie veuillez écrire quelque chose de valide ! ");
+                        Console.WriteLine("0 = " + randomItemA.Name + "\n" + "1 = " + randomItemB.Name);
+                        readeditem = Console.ReadLine();
+                    }
+                    while (readeditem != "0" || readeditem != "1");
                 }
                 if (readeditem == "0")
                 {

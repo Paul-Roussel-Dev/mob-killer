@@ -15,7 +15,12 @@ namespace Mob_Killer.Entities
         {
             var item = new Item();
             var items = item.GetItems();
-            var player = new Player();
+            
+            var lootphase = new Lootphase();
+            Console.WriteLine("Heuh j'ai affaire à qui la ?? (Entrez votre nom) :");
+            var playerName = Console.ReadLine();
+            var playerItem = lootphase.DroppedItems(items, Utils.random);
+            var player = new Player(0, playerName, Utils.random.Next(25, 100), playerItem.IdItem, playerItem, Utils.random.Next(5,25));
             var monster = new Monster();
             var monsters = monster.GetMonsters();
             var stage = new Stage();

@@ -1,11 +1,13 @@
 ﻿using Mob_Killer.Data;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 
 namespace Mob_Killer.Entities
 {
     public class Item
     {
+        [Key]
         public int IdItem { get; set; }
         public string Name { get; set; }
         public double BaseAttack { get; set; }
