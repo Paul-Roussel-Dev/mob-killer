@@ -41,7 +41,7 @@ namespace Mob_Killer.Entities
                     i++;
 
                 }
-                while (resultstage == true && i < 2);
+                while (resultstage == true && i < 4);
                 if(resultstage == true)
                 {
                     var bossbattle = new BossBattle();
