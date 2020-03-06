@@ -24,6 +24,8 @@ namespace Mob_Killer.Entities
             this.isPlayerTurn = true;
 
             Utils.SlowConsoleWriter("Que le combat commence !\n");
+            Utils.SlowConsoleWriter("Vous vous battez contre: " + monster.Name + "\n\n");
+            Console.WriteLine(monster.Image + "\n\n");
             while (MonsterStats.Health > 0 && PlayerStats.Health > 0)
             {
                 var turn = new Turn();

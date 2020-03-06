@@ -26,6 +26,9 @@ namespace Mob_Killer.Entities
             this.isPlayerTurn = false;
             string newPhase = "|\n|\n|\n|\n|\n";
 
+            Utils.SlowConsoleWriter("Vous vous battez contre: " + monster.Name + "\n\n");
+            Console.WriteLine(monster.Image + "\n\n");
+
             while (MonsterStats.Health > 0 && PlayerStats.Health > 0)
             {
                 var turn = new BossTurn();
@@ -51,7 +54,6 @@ namespace Mob_Killer.Entities
 
                         Turn.StartTurn(PlayerStats, MonsterStats, isPlayerTurn);
                         isPlayerTurn = !isPlayerTurn;
-                        Console.WriteLine(Utils.centaur);
                         Utils.SlowConsoleWriter(newPhase);
                     }
                 }
