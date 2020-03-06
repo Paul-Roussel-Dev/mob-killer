@@ -15,7 +15,7 @@ namespace Mob_Killer.Entities
         public string GetAnswerFromQuestion(Enigma enigma)
         {
             Utils.SlowConsoleWriter(" Le Boss vous pose cette colle : " + enigma.Question);
-            Utils.SlowConsoleWriter(" 0 : " + enigma.AnswerA + "  ||  1 : " + enigma.AnswerB);
+            Utils.SlowConsoleWriter("\n  0 : " + enigma.AnswerA + " \n  1 : " + enigma.AnswerB + "\n");
 
             string Response = Console.ReadLine();
 

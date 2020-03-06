@@ -23,7 +23,7 @@ namespace Mob_Killer.Entities
 
             Utils.SlowConsoleWriter(" \n Choisissez à présent l'item de votre choix : \n");
 
-            Utils.SlowConsoleWriter("0 = " + randomItemA.Name + "\n" + "1 = " + randomItemB.Name);
+            Utils.SlowConsoleWriter("0 = " + randomItemA.Name + "\n" + "1 = " + randomItemB.Name + "\n");
 
             var readeditem = Console.ReadLine();
             Utils.SlowConsoleWriter("Vous avez choisi : " + readeditem + "\n");
