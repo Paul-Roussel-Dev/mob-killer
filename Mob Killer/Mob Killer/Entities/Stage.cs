@@ -8,14 +8,18 @@ namespace Mob_Killer.Entities
 {
     public class Stage
     {
-        public bool StartStage(Player player, List<Monster> monsters, MonsterRepository instanceofmonster, List<Item> items, DialogueRepository dialogue)
+        public bool StartStage(Player player, List<Monster> monsters, MonsterRepository instanceofmonster, List<Item> items, List<Dialogue> allDialogue)
         {
-            dialogue.GetDialogue("Transition");
+            var dialogue = allDialogue;
+            var Dialogues = new DialogueRepository();
+            allDialogue = Dialogues.ShowDialogue("Transition", allDialogue, Utils.random);
+
 
             var monster = instanceofmonster.MonsterChoosen(monsters, Utils.random);
             var battle = new Battle();
             var win = battle.BattleResult(player, monster);
-            Console.WriteLine(win ? "vous avez gagné !!" : "Vous avez perdu ... ");
+            Utils.SlowConsoleWriter(win ? "vous avez gagné !!" : "Vous avez perdu ... ");
+
             if (win)
             {
                 var lootphase = new Lootphase();

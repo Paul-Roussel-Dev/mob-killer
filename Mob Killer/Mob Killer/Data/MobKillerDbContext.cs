@@ -4,6 +4,7 @@ using System.Text;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Mob_Killer.Entities;
+using Mob_Killer.Repository;
 
 namespace Mob_Killer.Data
 {

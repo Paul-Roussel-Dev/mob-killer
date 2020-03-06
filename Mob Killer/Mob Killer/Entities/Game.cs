@@ -20,19 +20,24 @@ namespace Mob_Killer.Entities
             var lootphase = new Lootphase();
             Console.WriteLine("Heuh j'ai affaire à qui la ?? (Entrez votre nom) :");
             var playerName = Console.ReadLine();
+
+            var dialogue = new DialogueRepository();
+            dialogue.ShowDialogue("Intro", dialogue.GetDialogue(), Utils.random);
+
             var playerItem = lootphase.DroppedItems(items, Utils.random);
             var player = new Player(0, playerName, Utils.random.Next(25, 100), playerItem.IdItem, playerItem, Utils.random.Next(5,25));
             var monster = new MonsterRepository();
             var monsters = monster.GetMonsters();
             var stage = new Stage();
-            var dialogue = new DialogueRepository();
-            var resultstage = stage.StartStage(player, monsters, monster, items, dialogue);
+            var dialogues = dialogue.GetDialogue();
+
+            var resultstage = stage.StartStage(player, monsters, monster, items, dialogues);
             if (resultstage == true)
             {
                 int i = 0;
                 do
                 {
-                    resultstage = stage.StartStage(player, monsters, monster, items, dialogue);
+                    resultstage = stage.StartStage(player, monsters, monster, items, dialogues);
                     i++;
 
                 }
