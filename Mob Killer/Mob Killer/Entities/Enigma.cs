@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Mob_Killer.Data;
+using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Mob_Killer.Entities
@@ -12,6 +14,5 @@ namespace Mob_Killer.Entities
         public string AnswerA { get; set; }
         public string AnswerB { get; set; }
 
-        // if bool Response == true responseA is the good response if Response == false its responseB who is the good response
     }
 }

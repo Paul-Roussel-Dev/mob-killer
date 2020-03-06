@@ -20,16 +20,6 @@ namespace Mob_Killer.Entities
 
         }
 
-        public List<Monster> GetMonsters()
-        {
-
-            using var dboContext = new MobKillerDbContext();
-            var Monstres = dboContext.Monsters;
-            var list = Monstres.ToList();
-
-            return list;
-        }
-
         public Monster(string name, double health, double attack, double evasion, string image)
         {
             this.Name = name;

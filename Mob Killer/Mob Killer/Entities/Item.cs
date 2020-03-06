@@ -25,15 +25,5 @@ namespace Mob_Killer.Entities
             this.BaseAttack = baseAttack;
             this.BonusEvasion = bonusEvasion;
         }
-
-        public List<Item> GetItems()
-        {
-            using var dboContext = new MobKillerDbContext();
-            var Items = dboContext.Items;
-            var listItems = Items.ToList();
-            return listItems;
-        }
-
-
     }
 }

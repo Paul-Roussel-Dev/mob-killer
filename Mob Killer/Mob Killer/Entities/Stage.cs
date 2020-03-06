@@ -1,4 +1,5 @@
 ﻿using Mob_Killer.Data;
+using Mob_Killer.Repository;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -7,9 +8,8 @@ namespace Mob_Killer.Entities
 {
     public class Stage
     {
-        public bool StartStage(Player player, List<Monster> monsters,Monster instanceofmonster, List<Item> items, Dialogue dialogue)
+        public bool StartStage(Player player, List<Monster> monsters, MonsterRepository instanceofmonster, List<Item> items, DialogueRepository dialogue)
         {
-            using var dboContext = new MobKillerDbContext();
             dialogue.GetDialogue("Transition");
 
             var monster = instanceofmonster.MonsterChoosen(monsters, Utils.random);

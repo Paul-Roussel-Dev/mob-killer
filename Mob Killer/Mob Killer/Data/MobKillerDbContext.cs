@@ -17,7 +17,7 @@ namespace Mob_Killer.Data
 
         public DbSet<Dialogue> Dialogue { get; set; }
 
-        public DbSet<Enigma> Question { get; set; }
+        public DbSet<Enigma> Enigmas { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
