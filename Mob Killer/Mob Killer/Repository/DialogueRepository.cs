@@ -13,42 +13,37 @@ namespace Mob_Killer.Repository
 
         public List<Dialogue> GetDialogue()
         {
-            using (var dboContext = new MobKillerDbContext())
-            {
-                var dialogue = dboContext.Dialogue;
-                var list = dialogue.ToList();
+            using var dboContext = new MobKillerDbContext();
+            var dialogue = dboContext.Dialogue;
+            var list = dialogue.ToList();
 
-                return list;
-            }
+            return list;
 
         }
 
         public List<Dialogue> ShowDialogue(string type, List<Dialogue> availableDialogue, Random random)
         {
 
-            using (var dboContext = new MobKillerDbContext())
+            using var dboContext = new MobKillerDbContext();
+            availableDialogue = availableDialogue.Where(p => p.Type == type).ToList();
+
+            if (availableDialogue.Count() > 0)
             {
-                availableDialogue = availableDialogue.Where(p => p.Type == type).ToList();
-
-                if (availableDialogue.Count() > 0)
-                {
-                    var randomDialogueA = availableDialogue[random.Next(0, availableDialogue.Count())];
-                    Utils.SlowConsoleWriter(randomDialogueA.Text);
-                    availableDialogue.Remove(randomDialogueA);
-                }
-                else
-                {
-                    availableDialogue = dboContext.Dialogue.Where(p => p.Type == type).ToList();
-                    var randomDialogueA = availableDialogue[random.Next(0, availableDialogue.Count())];
-                    Utils.SlowConsoleWriter(randomDialogueA.Text);
-                    availableDialogue.Remove(randomDialogueA);
-                }
-
-                Console.WriteLine();
-
-                return availableDialogue;
-
+                var randomDialogueA = availableDialogue[random.Next(0, availableDialogue.Count())];
+                Utils.SlowConsoleWriter(randomDialogueA.Text);
+                availableDialogue.Remove(randomDialogueA);
             }
+            else
+            {
+                availableDialogue = dboContext.Dialogue.Where(p => p.Type == type).ToList();
+                var randomDialogueA = availableDialogue[random.Next(0, availableDialogue.Count())];
+                Utils.SlowConsoleWriter(randomDialogueA.Text);
+                availableDialogue.Remove(randomDialogueA);
+            }
+
+            Console.WriteLine();
+
+            return availableDialogue;
 
         }
 
