@@ -29,10 +29,10 @@ namespace Mob_Killer.Entities
             {
                 var turn = new BossTurn();
                 var Turn = new Turn();
-                Console.WriteLine("Tour n°" + (TurnCounter + 1));
+                Utils.SlowConsoleWriter("Tour n°" + (TurnCounter + 1));
                 if (TurnCounter > enigmas.Count - 1)
                 {
-                    Console.WriteLine("TROOOOOOOOOOP TARRRRDDD  HAHAHAHAH !");
+                    Utils.SlowConsoleWriter("TROOOOOOOOOOP TARRRRDDD  HAHAHAHAH !");
                     return false;
                 }
                 else
@@ -58,12 +58,12 @@ namespace Mob_Killer.Entities
 
             if (MonsterStats.Health <= 0)
             {
-                Console.WriteLine("Combat Terminé !");
+                Utils.SlowConsoleWriter("Combat Terminé !");
                 return true;
             }
             else
             {
-                Console.WriteLine("Combat Terminé !");
+                Utils.SlowConsoleWriter("Combat Terminé !");
                 return false;
             }
         }

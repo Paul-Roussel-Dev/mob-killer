@@ -21,11 +21,11 @@ namespace Mob_Killer.Entities
                 evasionForce = monster.Evasion;
                 var resultFromRollDice = Randoming.RollDices(attackForce, evasionForce);
                 var param = new { attack = 0, evasion = 1 };
-                Console.WriteLine(resultFromRollDice[param.attack] + " / " + resultFromRollDice[param.evasion]);
+                Utils.SlowConsoleWriter(resultFromRollDice[param.attack] + " / " + resultFromRollDice[param.evasion] + "\n");
                 var damageDeal = (resultFromRollDice[param.attack] - (resultFromRollDice[param.attack] * (resultFromRollDice[param.evasion] == 0 ? (1 / 100) : (resultFromRollDice[param.evasion] / 100))));
-                Console.WriteLine("Vous attaquez ! Vous infligez " + damageDeal + " de dégat !");
+                Utils.SlowConsoleWriter("Vous attaquez ! Vous infligez " + damageDeal + " de dégat !" + "\n");
                 monster.Health -= damageDeal;
-                Console.WriteLine("Il lui reste : " + monster.Health + "hp");
+                Utils.SlowConsoleWriter("Il lui reste : " + monster.Health + "hp" + "\n");
             }
             else
             {
@@ -34,12 +34,13 @@ namespace Mob_Killer.Entities
 
                 var resultFromRollDice = Randoming.RollDices(attackForce, evasionForce);
                 var param = new { attack = 0, evasion = 1 };
-                Console.WriteLine(resultFromRollDice[param.attack] + " / " + resultFromRollDice[param.evasion]);
+                Utils.SlowConsoleWriter(resultFromRollDice[param.attack] + " / " + resultFromRollDice[param.evasion] + "\n");
+
                 var damageDeal = (resultFromRollDice[param.attack] - (resultFromRollDice[param.attack] * (resultFromRollDice[param.evasion] == 0 ? (1 / 100) : (resultFromRollDice[param.evasion] / 100))));
-                Console.WriteLine(monster.Name + " vous attaque et vous inflige " + damageDeal + " de dégat !");
+                Utils.SlowConsoleWriter(monster.Name + " vous attaque et vous inflige " + damageDeal + " de dégat !" + "\n");
 
                 player.Health -= damageDeal;
-                Console.WriteLine("Il vous reste : " + player.Health + "hp");
+                Utils.SlowConsoleWriter("Il vous reste : " + player.Health + "hp" + "\n");
             }
         }
     }

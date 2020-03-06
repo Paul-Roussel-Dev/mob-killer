@@ -23,25 +23,25 @@ namespace Mob_Killer.Entities
             this.MonsterStats = monster;
             this.isPlayerTurn = true;
 
-            Console.WriteLine("Que le combat commence !");
+            Utils.SlowConsoleWriter("Que le combat commence !\n");
             while (MonsterStats.Health > 0 && PlayerStats.Health > 0)
             {
                 var turn = new Turn();
-                Console.WriteLine("Tour n°" + (TurnCounter + 1));
+                Utils.SlowConsoleWriter("Tour n°" + (TurnCounter + 1) + "\n");
                 turn.StartTurn(PlayerStats, MonsterStats, isPlayerTurn);
                 isPlayerTurn = !isPlayerTurn;
                 TurnCounter++;
-                Console.WriteLine(Environment.NewLine);
+                Utils.SlowConsoleWriter(Environment.NewLine);
             }
 
             if (MonsterStats.Health <= 0)
             {
-                Console.WriteLine("Combat Terminé !");
+                Utils.SlowConsoleWriter("Combat Terminé !");
                 return true;
             }
             else
             {
-                Console.WriteLine("Combat Terminé !");
+                Utils.SlowConsoleWriter("Combat Terminé!");
                 return false;
             }
 

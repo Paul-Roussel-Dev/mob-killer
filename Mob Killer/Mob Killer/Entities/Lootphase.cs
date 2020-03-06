@@ -33,7 +33,7 @@ namespace Mob_Killer.Entities
                 do
                 {
                     Utils.SlowConsoleWriter("Erreur de saisie veuillez écrire quelque chose de valide ! ");
-                    Utils.SlowConsoleWriter("0 = " + randomItemA.Name + "\n" + "1 = " + randomItemB.Name);
+                    Utils.SlowConsoleWriter("0 = " + randomItemA.Name + "\n" + "1 = " + randomItemB.Name + "\n");
                     readeditem = Console.ReadLine();
                 }
                 while (readeditem != "0" || readeditem != "1");
