@@ -46,6 +46,7 @@ namespace Mob_Killer.Entities
                 {
                     var bossbattle = new BossBattle();
                     var enigma = new EnigmaRepository();
+                    var ramdomEnigma = new Enigma();
                     bool bossbatlleresult = bossbattle.BossBattleResult(player, monster.MonsterChoosen(monsters, Utils.random), enigma.GetEnigma());
                 }
             }

@@ -36,7 +36,7 @@ namespace Mob_Killer.Entities
                     Utils.SlowConsoleWriter("0 = " + randomItemA.Name + "\n" + "1 = " + randomItemB.Name + "\n");
                     readeditem = Console.ReadLine();
                 }
-                while (readeditem != "0" || readeditem != "1");
+                while (readeditem != "0" && readeditem != "1");
             }
             if (readeditem == "0")
             {

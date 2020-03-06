@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Mob_Killer.Repository;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -39,7 +40,8 @@ namespace Mob_Killer.Entities
                 {
                     if (isPlayerTurn)
                     {
-                        turn.StartBossTurn(PlayerStats, MonsterStats, enigmas[TurnCounter]);
+                        var enigmarandom = new EnigmaRepository();
+                        turn.StartBossTurn(PlayerStats, MonsterStats, enigmarandom.GetRamdomEnigma());
                         isPlayerTurn = !isPlayerTurn;
                         TurnCounter++;
                         Utils.SlowConsoleWriter(newPhase);
